@@ -10,6 +10,9 @@ def initialize(emails)
   @emails = emails
 end
 
+def parse
+  emails.delete(',').split.unique
+end
 
 
 end
